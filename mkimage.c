@@ -457,6 +457,6 @@ int main(int argc, char *argv[])
 	fsync(fileno(dfp));
 	fclose(dfp);
 	fclose(sfp);
-	printf("finish\n");
+	free(buf);
 	return 0;
 }
