@@ -1,5 +1,5 @@
 # 内核签名工具
-​	该工具在可执行镜像前加入一个uboot引导所需的64字节头。
+​	该工具在可执行镜像前加入一个uboot引导所需的64字节头，工具本身独立于平台，可在装有GCC的任意平台编译运行，主要解决无法在mac os下使用mkimage工具问题
 ```c
 struct image_header {
     unsigned int magic; //魔术字 固定为0x27051956
